@@ -5,7 +5,7 @@ jobs:
       - image: 'circleci/node:latest'
     steps:
       - checkout
-      - CHROME_BIN=/usr/bin/google-chrome
+      - which google-chrome
       - run: npm ci
       - run: npm test
       - run: npm chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
