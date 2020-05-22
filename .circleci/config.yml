@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-      - run: npm chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
+      - run: chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
   # The test job
   test:
     working_directory: ~/project-name
