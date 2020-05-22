@@ -29,7 +29,7 @@ jobs:
       # Lint the source code
       - run:
           name: Linting
-          command: ng
+          command: npm run lint
       # Test the source code
       - run:
           name: Testing
