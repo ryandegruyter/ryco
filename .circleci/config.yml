@@ -8,13 +8,11 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-      - run: npm run chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
   test:
     docker:
       - image: circleci/node:10-browsers
     steps:
       - checkout
-      # Restore local dependencies from cache
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package-lock.json" }}
@@ -34,6 +32,7 @@ jobs:
           command: npm test
       - codecov/upload:
           file: coverage/ryco/lcov.info
+      - run: npm run chromatic -- -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
 #      - run:
 #          name: End to End Test
 #          command: npm run e2e
