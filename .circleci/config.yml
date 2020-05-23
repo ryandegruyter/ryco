@@ -8,7 +8,6 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-      - run: npm run chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
   test:
     docker:
       - image: circleci/node:10-browsers
@@ -32,6 +31,7 @@ jobs:
       - run:
           name: Testing
           command: npm test
+      - run: npm run chromatic -a CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes
       - codecov/upload:
           file: coverage/ryco/lcov.info
 #      - run:
