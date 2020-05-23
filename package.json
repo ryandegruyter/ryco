@@ -8,7 +8,7 @@
     "test-dev": "ng test",
     "test": "ng test --no-watch --no-progress --code-coverage --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
-    "e2e": "ng e2e --protractor -config=e2e/protractor-ci.conf.js",
+    "e2e": "ng e2e",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "chromatic"

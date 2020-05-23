@@ -34,9 +34,9 @@ jobs:
           command: npm test
       - codecov/upload:
           file: coverage/ryco/lcov.info
-      - run:
-          name: End to End Test
-          command: npm run e2e
+#      - run:
+#          name: End to End Test
+#          command: npm run e2e
 workflows:
   version: 2
   build_and_test:
