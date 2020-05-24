@@ -25,7 +25,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "ryco",
       "kebab-case"
     ],
     "eofline": true,
