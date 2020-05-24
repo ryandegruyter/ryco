@@ -1,4 +1,4 @@
-# RyCo: Ryan IT Consulting
+# Ryan Consulting
 
 [![codecov](https://codecov.io/gh/ryandegruyter/ryco/branch/master/graph/badge.svg)](https://codecov.io/gh/ryandegruyter/ryco)
 [![ryandegruyter](https://circleci.com/gh/ryandegruyter/ryco/tree/master.svg?style=shield)](https://app.circleci.com/pipelines/github/ryandegruyter/ryco?branch=master)
