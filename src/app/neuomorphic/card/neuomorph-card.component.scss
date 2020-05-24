@@ -1,0 +1,31 @@
+.border {
+  border-radius: 1em;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  transition: .7s;
+}
+
+.container {
+  border-radius: 1em;
+  background-color: #eeeeee;
+  height: 100%;
+  box-sizing: border-box;
+  padding: .5em;
+}
+
+.card {
+  background-color: #eeeeee;
+  height: calc(100% - 2em);
+  margin: 1em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.7s;
+
+  &:hover, &:active, &:focus {
+    background: #eeeeee;
+    box-shadow: -1em 1em 28px #ffffff,
+    1em -1em 28px #cacaca;
+  }
+}
