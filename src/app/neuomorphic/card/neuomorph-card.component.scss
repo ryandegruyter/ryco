@@ -23,7 +23,7 @@
   cursor: pointer;
   transition: 0.7s;
 
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     background: #eeeeee;
     box-shadow: -1em 1em 28px #ffffff,
     1em -1em 28px #cacaca;
